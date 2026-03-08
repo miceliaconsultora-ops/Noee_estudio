@@ -1,0 +1,45 @@
+import React from 'react';
+import Hero from './components/Hero';
+import ProblemSolution from './components/ProblemSolution';
+import Timeline from './components/Timeline';
+import Testimonials from './components/Testimonials';
+import Services from './components/Services';
+import FAQ from './components/FAQ';
+import CTA from './components/CTA';
+
+function App() {
+    return (
+        <div className="font-sans text-primary bg-background selection:bg-secondary/30 selection:text-primary min-h-screen flex flex-col pt-16">
+
+            {/* Navbar Minimalista Fijo */}
+            <nav className="fixed top-0 left-0 w-full bg-background/90 backdrop-blur-md z-50 border-b border-primary/5 transition-all duration-300">
+                <div className="container mx-auto px-6 h-16 flex items-center justify-between">
+                    <a href="#" className="font-serif text-xl tracking-wider text-primary">
+                        NOELIA ESCAMEZ
+                    </a>
+                    <div className="hidden md:flex gap-8">
+                        <a href="#como-funciona" className="nav-link">Proceso</a>
+                        <a href="#testimonios" className="nav-link">Clientes</a>
+                        <a href="#servicios" className="nav-link">Servicios</a>
+                        <a href="#faq" className="nav-link">FAQ</a>
+                    </div>
+                    <a href="#contacto" className="btn-primary px-6 py-2 text-xs">Reservar</a>
+                </div>
+            </nav>
+
+            <main className="flex-grow">
+                <Hero />
+                <ProblemSolution />
+                <Timeline />
+                <Testimonials />
+                <Services />
+                <FAQ />
+            </main>
+
+            <CTA />
+
+        </div>
+    );
+}
+
+export default App;
