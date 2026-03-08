@@ -45,13 +45,17 @@ export default function Hero() {
                         <div className="absolute inset-0 translate-x-4 translate-y-4 bg-primary/5" />
                         <img
                             src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                            alt="Maquillaje elegante y profesional"
+                            alt="Maquillaje editorial elegante realizado por Noelia Escamez"
                             className="relative z-10 w-full h-full object-cover shadow-2xl sepia-[.1] hue-rotate-[-10deg] saturate-[.85]"
                         />
-                        {/* Badge Flotante para dinamismo */}
-                        <div className="absolute -left-8 md:-left-12 top-1/4 bg-white p-4 shadow-xl z-20 animate-[bounce_10s_ease-in-out_infinite]">
-                            <div className="text-3xl font-serif text-secondary mb-1">Cientos</div>
-                            <div className="text-xs uppercase tracking-widest text-primary/60">De clientas<br />satisfechas</div>
+                        {/* Badge Flotante para dinamismo con efecto CSS */}
+                        <div className="absolute -left-8 md:-left-12 top-1/4 bg-white/95 backdrop-blur-sm p-6 shadow-xl z-20 min-w-[160px] transition-all duration-500 ease-out hover:scale-105 hover:shadow-2xl hover:-translate-y-2 group cursor-default">
+                            <div className="relative z-10">
+                                <div className="text-4xl font-serif text-secondary mb-1 transition-colors duration-300 group-hover:text-primary">Cientos</div>
+                                <div className="text-xs uppercase tracking-widest text-primary/60 font-medium group-hover:text-primary/80 transition-colors duration-300">De clientas<br />satisfechas</div>
+                            </div>
+                            {/* Accent line on hover */}
+                            <div className="absolute bottom-0 left-0 w-0 h-1 bg-secondary transition-all duration-500 ease-out group-hover:w-full"></div>
                         </div>
                     </div>
                 </div>
