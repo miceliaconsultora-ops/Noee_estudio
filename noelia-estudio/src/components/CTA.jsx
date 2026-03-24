@@ -16,7 +16,7 @@ export default function CTA() {
                 </h3>
 
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-8">
-                    <a href="#" className="w-full sm:w-auto px-8 py-3 bg-secondary text-primary font-medium uppercase tracking-wider text-sm transition-all duration-300 hover:bg-white hover:-translate-y-1 inline-flex items-center justify-center group">
+                    <a href="https://wa.me/5491159309893" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto px-8 py-3 bg-secondary text-primary font-medium uppercase tracking-wider text-sm transition-all duration-300 hover:bg-white hover:-translate-y-1 inline-flex items-center justify-center group">
                         Reservar mi cita
                         <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </a>
@@ -42,13 +42,13 @@ export default function CTA() {
                             <h5 className="text-sm uppercase tracking-widest text-secondary mb-4">Contacto</h5>
                             <ul className="space-y-3">
                                 <li className="flex items-center gap-2 text-white/50 text-sm hover:text-white transition-colors cursor-pointer">
-                                    <Instagram className="w-4 h-4" /> @noeliaescamez
+                                    <Instagram className="w-4 h-4" /> @noee_estudio
                                 </li>
                                 <li className="flex items-center gap-2 text-white/50 text-sm hover:text-white transition-colors cursor-pointer">
-                                    <Mail className="w-4 h-4" /> hola@noeliaescamez.com
+                                    <Mail className="w-4 h-4" /> noeliae.makeup@gmail.com
                                 </li>
                                 <li className="flex items-center gap-2 text-white/50 text-sm hover:text-white transition-colors cursor-pointer">
-                                    <MapPin className="w-4 h-4" /> Estudio Privado, Centro
+                                    <MapPin className="w-4 h-4" /> Nuñez, CABA
                                 </li>
                             </ul>
                         </div>
@@ -63,7 +63,7 @@ export default function CTA() {
                     </div>
 
                     <div className="mt-16 pt-8 border-t border-white/10 text-center text-white/30 text-xs flex flex-col sm:flex-row justify-between items-center gap-4">
-                        <p>© {new Date().getFullYear()} Noelia Escamez Estudio. Todos los derechos reservados.</p>
+                        <p>IA based design and development by MicelIA Consultora</p>
                         <p>Designed in Luxury Editorial Style</p>
                     </div>
                 </div>

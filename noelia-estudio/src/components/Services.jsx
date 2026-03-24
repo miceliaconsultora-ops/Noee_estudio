@@ -1,40 +1,44 @@
-import React from 'react';
-import { Sparkles, Calendar, BookOpen } from 'lucide-react';
+import React, { useState } from 'react';
+import { Sparkles, Calendar, BookOpen, ChevronDown, ChevronUp } from 'lucide-react';
 
 export default function Services() {
+    const [showCourseDetails, setShowCourseDetails] = useState(false);
+
     const services = [
         {
+            id: "maquillaje",
             icon: <Sparkles className="w-6 h-6" />,
-            title: "Maquillaje Social & Eventos",
-            description: "Para novias, invitadas, madrinas o fiestas de egresados.",
+            title: "Maquillaje y/o Peinado",
+            description: "Servicios personalizados para destacar en tu evento especial.",
             features: [
-                "Duración extendida garantizada",
-                "Diseño acorde al vestuario",
-                "Pestañas postizas incluidas"
+                "Novias",
+                "Quinceañeras",
+                "Madrinas",
+                "Barra de glitter",
+                "Eventos sociales"
             ],
             popular: false
         },
         {
+            id: "curso-presencial",
             icon: <BookOpen className="w-6 h-6" />,
-            title: "Automaquillaje Básico",
+            title: "Curso automaquillaje Presencial",
             description: "Aprende a armar tu neceser y a crear un look de día impecable.",
             features: [
+                "Clase práctica de 2 horas.",
                 "Revisión de tu cosmetiquera",
-                "Rutina de Skincare ágil",
                 "Práctica guiada paso a paso"
             ],
             popular: true
         },
         {
+            id: "curso-online",
             icon: <Calendar className="w-6 h-6" />,
-            title: "Perfeccionamiento",
-            description: "Transforma tu look de día a noche con técnicas avanzadas.",
-            features: [
-                "Smokey eyes profesionales",
-                "Delineado perfecto",
-                "Piel luminosa (Glass skin)"
-            ],
-            popular: false
+            title: "Cursos On Line",
+            description: "Técnicas avanzadas dictadas 100% online.",
+            features: [],
+            popular: false,
+            upcoming: true
         }
     ];
 
@@ -81,12 +85,54 @@ export default function Services() {
                                 ))}
                             </ul>
 
-                            <a href="#contacto" className={`w-full text-center py-4 text-sm uppercase tracking-widest transition-colors ${service.popular
-                                    ? 'bg-primary text-white hover:bg-black'
-                                    : 'border border-primary text-primary hover:bg-primary/5'
-                                }`}>
-                                {service.title.includes("Curso") ? "Ver Curso" : "Reservar Cita"}
-                            </a>
+                            {service.id === "curso-presencial" && (
+                                <div className="mb-6 flex flex-col gap-4">
+                                    <button 
+                                        onClick={() => setShowCourseDetails(!showCourseDetails)}
+                                        className="flex items-center justify-center gap-2 text-[10px] md:text-xs uppercase tracking-[0.2em] text-primary/60 hover:text-primary transition-colors py-3 border-t border-b border-primary/10"
+                                    >
+                                        {showCourseDetails ? 'Ocultar detalles' : 'Ver detalles'}
+                                        {showCourseDetails ? <ChevronUp className="w-3 h-3" /> : <ChevronDown className="w-3 h-3" />}
+                                    </button>
+
+                                    {showCourseDetails && (
+                                        <div className="text-xs text-primary/80 bg-primary/5 p-5 animate-in fade-in slide-in-from-top-2 font-light leading-relaxed border-l-2 border-secondary overflow-hidden">
+                                            <p className="font-medium mb-3 text-primary">Se trata de un curso de 1 clase de 2 horas donde te voy a enseñar:</p>
+                                            <ul className="list-disc pl-5 space-y-2 mb-4">
+                                                <li>Preparación y cuidado correcto de la piel.</li>
+                                                <li>Cómo elegir correctamente tu base y corrector. Formas de aplicación.</li>
+                                                <li>Contornos en polvo y correcciones según tipo de rostro.</li>
+                                                <li>Maquillaje en tonos neutros según tipo de ojo.</li>
+                                                <li>Diseño de Cejas.</li>
+                                                <li>Labios: definición y simetría.</li>
+                                                <li>Transformar maquillaje de día en noche en pocos pasos.</li>
+                                                <li>Asesoramiento personal e higiene de brochas.</li>
+                                            </ul>
+                                            <p className="mb-2 flex items-start gap-2">
+                                                <span className="text-secondary mt-1">✦</span>
+                                                Materiales incluidos (cremas, pinceles y maquillajes), aunque recomendamos traer los tuyos para asesorarte.
+                                            </p>
+                                            <p className="italic font-serif text-primary/70 mt-3 pt-3 border-t border-primary/10">Cada clase es personalizada, orientada en resaltar tus rasgos y estilo personal.</p>
+                                        </div>
+                                    )}
+                                </div>
+                            )}
+
+                            {service.upcoming ? (
+                                <span className={`w-full block text-center py-4 text-sm uppercase tracking-widest transition-colors ${service.popular
+                                        ? 'bg-primary/90 text-white cursor-default'
+                                        : 'border border-primary/20 text-primary/40 cursor-default bg-primary/5'
+                                    }`}>
+                                    Próximamente
+                                </span>
+                            ) : (
+                                <a href="https://wa.me/5491159309893" target="_blank" rel="noopener noreferrer" className={`w-full text-center py-4 text-sm uppercase tracking-widest transition-colors ${service.popular
+                                        ? 'bg-primary text-white hover:bg-black'
+                                        : 'border border-primary text-primary hover:bg-primary/5'
+                                    }`}>
+                                    Reservar
+                                </a>
+                            )}
                         </div>
                     ))}
                 </div>

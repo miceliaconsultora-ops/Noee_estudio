@@ -9,11 +9,11 @@ export default function FAQ() {
         },
         {
             question: "¿Con cuánto tiempo debo reservar mi cita para un evento?",
-            answer: "Sugerimos reservar con al menos 3 semanas de anticipación para asegurar disponibilidad, especialmente en temporada alta de bodas o fiestas de fin de año."
+            answer: "Sugerimos reservar con la mayor anticipación posible para asegurar disponibilidad, especialmente en temporada alta de bodas o fiestas de fin de año."
         },
         {
             question: "¿Realizan maquillaje a domicilio?",
-            answer: "Ofrecemos servicio a domicilio para novias y madrinas. Para eventos sociales, los servicios se realizan en el confort de nuestro estudio privado."
+            answer: "Los servicios se realizan tanto a domicilio como en el estudio, a preferencia de la clienta."
         },
         {
             question: "¿Tengo que tener conocimientos previos para el curso?",

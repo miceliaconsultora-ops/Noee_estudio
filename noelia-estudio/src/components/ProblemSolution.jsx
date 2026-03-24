@@ -10,7 +10,7 @@ export default function ProblemSolution() {
 
     const solutions = [
         "Estudio personalizado de tu piel y rostro para destacar lo mejor de vos.",
-        "Productos de primera línea (Kryolan, Mac, Dior) para una fijación extrema.",
+        "Productos de primera línea: Dior, Ysl, Mac, Chanel, Natasha Denona, Huda Beauty, Tom Ford.",
         "Técnicas que resaltan tus rasgos sin que te sientas disfrazada."
     ];
 
