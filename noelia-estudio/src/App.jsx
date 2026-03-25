@@ -16,7 +16,7 @@ function App() {
             <nav className="fixed top-0 left-0 w-full bg-background/90 backdrop-blur-md z-50 border-b border-primary/5 transition-all duration-300">
                 <div className="container mx-auto px-6 h-16 flex items-center justify-between">
                     <a href="#" className="flex items-center">
-                        <img src="/logo/IMG_8370.PNG" alt="NOELIA ESCAMEZ" className="h-6 md:h-8 object-contain" />
+                        <img src="/logo/IMG_8370.PNG" alt="NOELIA ESCAMEZ" className="h-9 md:h-12 object-contain drop-shadow-sm" />
                     </a>
                     <div className="hidden md:flex gap-8">
                         <a href="#portfolio" className="nav-link">Portfolio</a>

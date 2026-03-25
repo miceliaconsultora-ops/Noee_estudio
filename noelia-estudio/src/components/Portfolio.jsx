@@ -57,8 +57,8 @@ const galleries = [
         cover: "/portfolio/Madrinas/Facetune_09-04-2024-13-58-03.jpg",
         items: [
             { type: "image", src: "/portfolio/Madrinas/Facetune_09-04-2024-13-58-03.jpg" },
-            { type: "image", src: "/portfolio/Madrinas/IMG_2446.PNG" },
-            { type: "image", src: "/portfolio/Madrinas/IMG_2447.PNG" },
+            { type: "image", src: "/portfolio/Madrinas/IMG_2448.PNG" },
+            { type: "image", src: "/portfolio/Madrinas/madrina3.jpeg" },
         ]
     },
     {

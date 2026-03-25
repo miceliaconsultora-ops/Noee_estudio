@@ -1,0 +1,6 @@
+node_modules
+/noelia-estudio/node_modules
+/noelia-estudio/dist
+.DS_Store
+.env
+*.log

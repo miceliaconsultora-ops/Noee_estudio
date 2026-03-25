@@ -41,13 +41,17 @@ export default function CTA() {
                         <div className="col-span-1">
                             <h5 className="text-sm uppercase tracking-widest text-secondary mb-4">Contacto</h5>
                             <ul className="space-y-3">
-                                <li className="flex items-center gap-2 text-white/50 text-sm hover:text-white transition-colors cursor-pointer">
-                                    <Instagram className="w-4 h-4" /> @noee_estudio
+                                <li className="text-white/50 text-sm hover:text-white transition-colors">
+                                    <a href="https://instagram.com/noee_estudio" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2">
+                                        <Instagram className="w-4 h-4" /> @noee_estudio
+                                    </a>
                                 </li>
-                                <li className="flex items-center gap-2 text-white/50 text-sm hover:text-white transition-colors cursor-pointer">
-                                    <Mail className="w-4 h-4" /> noeliae.makeup@gmail.com
+                                <li className="text-white/50 text-sm hover:text-white transition-colors">
+                                    <a href="mailto:noeliae.makeup@gmail.com" className="flex items-center gap-2">
+                                        <Mail className="w-4 h-4" /> noeliae.makeup@gmail.com
+                                    </a>
                                 </li>
-                                <li className="flex items-center gap-2 text-white/50 text-sm hover:text-white transition-colors cursor-pointer">
+                                <li className="flex items-center gap-2 text-white/50 text-sm cursor-default">
                                     <MapPin className="w-4 h-4" /> Nuñez, CABA
                                 </li>
                             </ul>
